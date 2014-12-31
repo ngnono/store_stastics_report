@@ -1,4 +1,4 @@
-# sales_report_task [![Build Status](https://secure.travis-ci.org//sales-report-task.png?branch=master)](http://travis-ci.org//sales-report-task)
+# store_stastics_report [![Build Status](https://secure.travis-ci.org//store_stastics_report.png?branch=master)](http://travis-ci.org//store_stastics_report)
 
 > The best module ever.
 
