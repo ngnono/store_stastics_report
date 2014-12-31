@@ -19,7 +19,7 @@ if (argv.reportdate && !argv.reportDate) {
 
 //console.log(argv);
 
-app.store_report(argv);
+app.storeReport(argv);
 
 
-//app.store_report();
+//app.storeReport();

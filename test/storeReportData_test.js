@@ -11,19 +11,19 @@
 var config = require('config');
 var _ = require('lodash');
 
-var getData = require('../lib/store_report_db');
+var getData = require('../lib/storeReportData');
 
-console.log(getData);
+//console.log(getData);
 
 var datas;
-var dbconfig = config.get('DB');
-console.log(dbconfig);
+var dbConfig = config;//.get('DB');
+console.log(dbConfig);
 
 
-dbconfig.reportDate='2014-12-26';
+dbConfig.reportDate='2014-12-26';
 
 
-getData.ger_store_report_data(dbconfig, function (err, recordSet) {
+getData.gerStoreReportData(dbConfig, function (err, recordSet) {
     if(err){
         return console.log('err:'+JSON.stringify(err))
     }

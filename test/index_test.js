@@ -30,7 +30,7 @@ exports.salesReportTask = {
   'no args': function(test) {
     test.expect(1);
     // tests here
-    test.equal(salesReportTask.awesome(), 'awesome', 'should be awesome.');
+    //test.equal(salesReportTask.awesome(), 'awesome', 'should be awesome.');
     test.done();
   }
 };

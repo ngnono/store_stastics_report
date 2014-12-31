@@ -7,14 +7,10 @@
 
 'use strict';
 
-var StoreReport = require('../lib/store_report');
+var StoreReport = require('../lib/storeReport');
 
 
 var sr = new StoreReport();
-
-console.log(sr.init);
-sr.init();
-
 
 var opts = {
     reportDate: '2014-12-26'
