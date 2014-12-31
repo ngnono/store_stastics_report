@@ -2,7 +2,6 @@
 
 'use strict';
 
-var salesReportTask = require('./sales-report-task');
 
 var userArgs = process.argv;
 var searchParam = userArgs[2];
@@ -14,3 +13,5 @@ if (userArgs.indexOf('-h') !== -1 || userArgs.indexOf('--help') !== -1 || search
 if (userArgs.indexOf('-v') !== -1 || userArgs.indexOf('--version') !== -1) {
     return console.log(require('./package').version);
 }
+
+var app = require('./app');
