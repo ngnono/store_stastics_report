@@ -1,0 +1,83 @@
+{
+    "DB": {
+        "user": "dev",
+        "password": "password",
+        "server": "127.0.0.1",
+        "port": "14331",
+        "database": "database"
+    },
+
+    "EXCEL": {
+        "dataMap": [
+            {
+                "dataMapKey": "Store",
+                "desc": "门店名称",
+                "type": "str"
+
+            },
+            {
+                "dataMapKey": "ApplyCount",
+                "desc": "开店数量",
+                "type": "num"
+            },
+            {
+                "dataMapKey": "ActiveCount",
+                "desc": "店铺活跃数量",
+                "type": "num"
+            },
+            {
+                "dataMapKey": "DailyOrderCount",
+                "desc": "当天订单数",
+                "type": "num"
+            },
+            {
+                "dataMapKey": "DailyOrderAmount",
+                "desc": "当天订单金额",
+                "type": "num"
+            },
+            {
+                "dataMapKey": "WeeklyOrderCount",
+                "desc": "当周订单数",
+                "type": "num"
+            },
+            {
+                "dataMapKey": "WeeklyOrderAmount",
+                "desc": "当周订单金额",
+                "type": "num"
+            },
+            {
+                "dataMapKey": "MonthlyOrderCount",
+                "desc": "当月订单数",
+                "type": "num"
+            },
+            {
+                "dataMapKey": "MonthlyOrderAmount",
+                "desc": "当月订单金额",
+                "type": "num"
+            }
+
+        ]
+    },
+
+    "EMAIL": {
+        "server": {
+            "host": "smtp.xxxx.com",
+            "port": 25,
+            "tls": {
+                "rejectUnauthorized": false
+            },
+            "auth": {
+                "user": "user",
+                "pass": "pass"
+            }
+        },
+        "storeReportSender": {
+            "from": "user.xxxx.com",
+            "to": [
+                "xxxx@yintai.com",
+                "xxxx@126.com",
+                "xxxxx@xx.com.cn"
+            ]
+        }
+    }
+}
