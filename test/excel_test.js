@@ -137,6 +137,22 @@ var d = [
         MonthlyOrderAmount: 12 }
 ];
 
+var ttt=     { Id: 2,
+    DateKey: '2014-12-26',
+    Store: '中文门店',
+    ApplyCount: 12,
+    ActiveCount: 12,
+    DailyOrderCount: 12,
+    DailyOrderAmount: 12,
+    WeeklyOrderCount: 12,
+    WeeklyOrderAmount: 12,
+    MonthlyOrderCount: 12,
+    MonthlyOrderAmount: 12 };
+for(var i= 0;i<40;i++){
+    d.push(ttt);
+}
+
+
 var opts = {
     sheetName: '中文的sheet',
     fileName: __dirname + '/23.xlsx',
