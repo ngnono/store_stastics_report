@@ -118,7 +118,7 @@ var sendInfo = {
 
 
 _.merge(sendInfo.sender, emailCfg.storeReportSender);
-sendInfo.sender.text = table.toString();
+//sendInfo.sender.text = table.toString();
 
 
 email.send(sendInfo, function (err, rst) {
