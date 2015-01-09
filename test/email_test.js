@@ -130,11 +130,6 @@ var sendInfo2 = {
         {
             path: filePath2
         }
-        ,
-        {
-            path: filePath3
-        }
-
 
     ]//,
     // text: table.toString()
