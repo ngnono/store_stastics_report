@@ -16,12 +16,14 @@ var _ = require('lodash');
 var emailCfg = config.get('EMAIL');
 
 
-var cfg={};
-_.merge(cfg,emailCfg);
+var cfg = {};
+_.merge(cfg, emailCfg);
 console.log(cfg);
 var email = new Email(cfg);
 
 var filePath = __dirname + '/报名名称1.xlsx';
+var filePath2 = __dirname + '/23.xlsx';
+var filePath3 = __dirname + '/email_test.js';
 
 
 var datas = [
@@ -59,27 +61,27 @@ var chars = {
     'mid': '',
     'left-mid': '',
     'mid-mid': '',
-    'right-mid': '' ,
-    'top-mid':'',
-    'bottom-mid':'',
-    'left':'',
-    'right':'',
-    'middle':'',
-    'top':'',
-    'top-left':'',
-    'top-right':'',
-    'bottom-left':'',
-    'bottom-right':'',
-    'bottom':''
+    'right-mid': '',
+    'top-mid': '',
+    'bottom-mid': '',
+    'left': '',
+    'right': '',
+    'middle': '',
+    'top': '',
+    'top-left': '',
+    'top-right': '',
+    'bottom-left': '',
+    'bottom-right': '',
+    'bottom': ''
 };
 
 console.log(keys);
 var table = new Table({
-    chars :chars,
+    chars: chars,
     head: keys//,
     //colWidths:[20,20]
 
-      ,style:{'padding-left':5,'padding-right':5}
+    , style: {'padding-left': 5, 'padding-right': 5}
 });
 
 // table.push(keys);
@@ -117,11 +119,45 @@ var sendInfo = {
 };
 
 
+//中文名 有问题
+var sendInfo2 = {
+    sender: emailCfg.storeReportSender,
+    file: [
+        {
+            name: '中文名OK.xlsx',
+            path: filePath
+        },
+        {
+            path: filePath2
+        }
+        ,
+        {
+            path: filePath3
+        }
+
+
+    ]//,
+    // text: table.toString()
+
+
+};
+_.merge(sendInfo2.sender, emailCfg.storeReportSender);
+
 _.merge(sendInfo.sender, emailCfg.storeReportSender);
 //sendInfo.sender.text = table.toString();
 
 
-email.send(sendInfo, function (err, rst) {
+//email.send(sendInfo, function (err, rst) {
+//    if (err) {
+//        return console.log(err);
+//    }
+//
+//
+//    console.log(JSON.stringify(rst));
+//
+//});
+
+email.send(sendInfo2, function (err, rst) {
     if (err) {
         return console.log(err);
     }
