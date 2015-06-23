@@ -41,6 +41,7 @@
   "dependencies": {
     "cli-table": "^0.3.1",
     "config": "^1.9.0",
+    "events": "^1.0.2",
     "excel4node": "^0.1.7",
     "lodash": "^2.4.1",
     "mime": "^1.2.11",

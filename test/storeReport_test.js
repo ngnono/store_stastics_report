@@ -13,7 +13,7 @@ var StoreReport = require('../lib/storeReport');
 var sr = new StoreReport();
 
 var opts = {
-    reportDate: '2014-12-26'
+    reportDate: '2015-1-26'
 
 };
 
